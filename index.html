@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medilab Free Bootstrap HTML5 Template</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway|Candal|PT+Sans:400,700">
+	
+	
+	
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>	
+	
+    <script type="text/javascript" src="js/fg.menu.js"></script>
+    
+    <link type="text/css" href="css/fg.menu.css" media="screen" rel="stylesheet" />	
+	
+	
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- =======================================================
+    Theme Name: Medilab
+    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+	
+	
+	
+<!-- styles for this example page only -->
+	<style type="text/css">
+	
+	#menuLog { font-size:1.4em; margin:20px; }
+	.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
+	
+	.fg-button { clear:left; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+	.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+	a.fg-button { float:left;  }
+	button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */
+	
+	.fg-button-icon-left { padding-left: 2.1em; }
+	.fg-button-icon-right { padding-right: 2.1em; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+	.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+	.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
+	
+	.fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }
+	</style>
+	
+	<!-- style exceptions for IE 6 -->
+	<!--[if IE 6]>
+	<style type="text/css">
+		.fg-menu-ipod .fg-menu li { width: 95%; }
+		.fg-menu-ipod .ui-widget-content { border:0; }
+	</style>
+	<![endif]-->	
+    
+    <script type="text/javascript">    
+    $(function(){
+    	// BUTTONS
+    	$('.fg-button').hover(
+    		function(){ $(this).removeClass('ui-state-default').addClass('ui-state-focus'); },
+    		function(){ $(this).removeClass('ui-state-focus').addClass('ui-state-default'); }
+    	);
+    	
+    	// MENUS    	
+		$('#flat').menu({ 
+			content: $('#flat').next().html(), // grab content from this page
+			showSpeed: 400 
+		});
+		
+		$('#hierarchy').menu({
+			content: $('#hierarchy').next().html(),
+			crumbDefaultText: ' '
+		});
+		
+		$('#hierarchybreadcrumb').menu({
+			content: $('#hierarchybreadcrumb').next().html(),
+			backLink: false
+		});
+		
+		// or from an external source
+		$.get('menuContent.html', function(data){ // grab content from another page
+			$('#flyout').menu({ content: data, flyOut: false });
+		});
+    });
+    </script>	
+	
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="width: 1400px">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-left" id="myNavbar">
+             <div class="mNavbar">
+  
+						
+						 <a href="index.html">Home</a>
+						
+						
+						<div class="mdropdown">
+<a tabindex="0" href="#news-items-2" class="fg-buttonxx fg-button-icon-rightxx ui-widgetxx ui-state-defaultxx ui-corner-allxx" id="hierarchybreadcrumb">Journals <i class="fa fa-angle-down fa-lg"></i></a>
+	
+<div id="news-items-2" class="hidden">
+<ul>
+	<li><a href="#">Biology and Life Science</a>
+
+		<ul>
+			<li><a href="index_journal.html">Abstract and Applied Analysis</a></li>
+			<li><a href="index_journal.html">Active and Passive Electronic Components</a></li>
+			<li><a href="index_journal.html">Advances in Acoustics and Vibration</a></li>
+			<li><a href="index_journal.html">Advances in Agriculture</a></li>
+			<li><a href="index_journal.html">Advances in Astronomy</a></li>
+			<li><a href="index_journal.html">Advances in Bioinformatics</a></li>
+			<li><a href="index_journal.html">Advances in Chemistry</a></li>
+			<li><a href="index_journal.html">Behavioural Neurology</a></li>
+			<li><a href="index_journal.html">Biochemistry Research International</a></li>
+			<li><a href="index_journal.html">Bioinorganic Chemistry and Applications</a></li>
+			<li><a href="index_journal.html">BioMed Research International</a></li>
+			<li><a href="index_journal.html">Bone Marrow Research</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="#">Biomedical Science</a>
+	<ul>
+			<li><a href="index_journal.html">Abstract and Applied Analysis</a></li>
+			<li><a href="index_journal.html">Active and Passive Electronic Components</a></li>
+			<li><a href="index_journal.html">Advances in Acoustics and Vibration</a></li>
+			<li><a href="index_journal.html">Advances in Agriculture</a></li>
+			<li><a href="index_journal.html">Advances in Astronomy</a></li>
+			<li><a href="index_journal.html">Advances in Bioinformatics</a></li>
+			<li><a href="index_journal.html">Advances in Chemistry</a></li>
+			<li><a href="index_journal.html">Behavioural Neurology</a></li>
+			<li><a href="index_journal.html">Biochemistry Research International</a></li>
+			<li><a href="index_journal.html">Bioinorganic Chemistry and Applications</a></li>
+			<li><a href="index_journal.html">BioMed Research International</a></li>
+			<li><a href="index_journal.html">Bone Marrow Research</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Case reports</a>
+	<ul>
+			<li><a href="index_journal.html">Abstract and Applied Analysis</a></li>
+			<li><a href="index_journal.html">Active and Passive Electronic Components</a></li>
+			<li><a href="index_journal.html">Advances in Acoustics and Vibration</a></li>
+			<li><a href="index_journal.html">Advances in Agriculture</a></li>
+			<li><a href="index_journal.html">Advances in Astronomy</a></li>
+			<li><a href="index_journal.html">Advances in Bioinformatics</a></li>
+			<li><a href="index_journal.html">Advances in Chemistry</a></li>
+			<li><a href="index_journal.html">Behavioural Neurology</a></li>
+			<li><a href="index_journal.html">Biochemistry Research International</a></li>
+			<li><a href="index_journal.html">Bioinorganic Chemistry and Applications</a></li>
+			<li><a href="index_journal.html">BioMed Research International</a></li>
+			<li><a href="index_journal.html">Bone Marrow Research</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Chemistry</a>
+	<ul>
+		<li><a href="index_journal.html">Abstract and Applied Analysis</a></li>
+			<li><a href="index_journal.html">Active and Passive Electronic Components</a></li>
+			<li><a href="index_journal.html">Advances in Acoustics and Vibration</a></li>
+			<li><a href="index_journal.html">Advances in Agriculture</a></li>
+			<li><a href="index_journal.html">Advances in Astronomy</a></li>
+			<li><a href="index_journal.html">Advances in Bioinformatics</a></li>
+			<li><a href="index_journal.html">Advances in Chemistry</a></li>
+			<li><a href="index_journal.html">Behavioural Neurology</a></li>
+			<li><a href="index_journal.html">Biochemistry Research International</a></li>
+			<li><a href="index_journal.html">Bioinorganic Chemistry and Applications</a></li>
+			<li><a href="index_journal.html">BioMed Research International</a></li>
+			<li><a href="index_journal.html">Bone Marrow Research</a></li>
+	</ul>
+	</li>
+	
+	<li><a href="#">Computer Science</a></li>
+	<li><a href="#">Earth, Energy, and Environmental Science</a></li>
+	<li><a href="#">Medicine</a></li>
+	<li><a href="#">Materials Science</a>
+		<li><a href="#">Mathematics</a></li>
+	<li><a href="#">Physics</a>
+		
+	</li>
+  </ul>
+</div>
+	
+</div>
+						
+						
+						
+						  <div class="mdropdown">
+							<button class="mdropbtn">Rescources
+							  <i class="fa fa-angle-down fa-lg"></i>
+							</button>
+							<div class="mdropdown-content">
+							  <a href="#">Authors</a>
+							  <a href="#">Editors</a>
+								<a href="#">Institutions</a>
+							  <a href="#">Publishers</a>
+							</div>
+						  </div> 
+						
+						 <div class="mdropdown">
+							<button class="mdropbtn">News
+							  <i class="fa fa-angle-down fa-lg"></i>
+							</button>
+							<div class="mdropdown-content">
+							  <a href="#">In the Press</a>
+							  <a href="#">Blog News</a>
+							
+							</div>
+						  </div> 
+						
+						 <div class="mdropdown">
+							<button class="mdropbtn">About Us
+							  <i class="fa fa-angle-down fa-lg"></i>
+							</button>
+							<div class="mdropdown-content">
+							  <a href="#">About Hindawi</a>
+							  <a href="#">Meet the Team</a>
+								<a href="#">Contact Us</a>
+							</div>
+						  </div> 
+						
+						
+					
+
+						
+						
+						</div>
+            </div>
+			  
+		    <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search journals and articles by keywords">
+      <button onclick="window.location.href='index_journal.html'" type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+			  
+		    <div class="navbar-right" id="submitR"> 
+			  <a href="#contact" class="btn btn-appoint">Submit research</a>
+		    </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center"> </div>
+            <div class="banner-text text-center">
+              <h1 class="white">Science works best when research is open</h1>
+<a href="#contact" class="btn btn-appoint">Submit research</a>
+            </div>
+            <div class="overlay-detail text-center">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!--service-->
+  <section id="service" class="section-padding">
+    <div class="container">
+      <div class="row"></div>
+    <img src="img/content1.png" width="1046" height="246" style="margin: 0 auto; display: block" alt=""/></div>
+  </section>
+  <!--/ service-->
+  <!--cta--><!--cta-->
+  <!--about-->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row"><img src="img/content2.png" width="1177" height="425" style="margin: 0 auto; display: block" alt=""/></div>
+    </div>
+  </section>
+  <!--/ about-->
+  <!--doctor team-->
+  <section id="doctor-team" class="section-padding" style="background: url(img/bg2.png); background-position: 0px 270px; background-repeat: no-repeat">
+	  <div class="container"><div class="row"><img src="img/content3.png" width="1177" height="538" style="margin: 0 auto; display: block" alt=""/></div></div></section>
+  <!--/ doctor team-->
+  <!--testimonial-->
+  <section id="testimonialx" class="section-padding"><span class="row"><img src="img/content4.png" width="1055" height="432" style="margin: 0 auto; display: block" alt=""/></span></section>
+  <section style="background: url(img/bg2.png);  background-repeat: no-repeat; height: 10px">
+    
+  </section>
+  <!--/ testimonial-->
+  <!--cta 2--><!--cta-->
+  <!--contact--><!--/ contact-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+			 <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Publish with Us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info"><li>Submit Research<br>
+                Browse Journals<br>
+                Authors</li>
+              </ul>
+            </div>
+          </div>
+			 <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Work with Us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info"><li>Institutions<br>
+                Publishers<br>
+                Editors</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About Us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info"><li>About Hindawi<br>
+                Meet the Team<br>
+                Contact Us</li>
+              </ul>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+         
+          <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Connect with us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         © 2018 Hindawi Limited unless otherwise stated.
+<div class="credits">
+            <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+              --></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+ 
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  
+
+</body>
+
+</html>
