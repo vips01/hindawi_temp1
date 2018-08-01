@@ -224,7 +224,7 @@ display: inline-block;
 
 
 .skinnyTitle {background: #3a3939; height: 80px; position: fixed; width: 100%;
-    top: -50px; }
+    top: -50px;  transition: all 0.3s ease; }
 
 
 .skinnyTitle h1 {font-size: 38px; font-family: 'Open Sans', sans-serif;
@@ -350,6 +350,7 @@ Journal page nav
 
 .dropdown {
     float: left;
+	    z-index: 12;
     
 }
 
