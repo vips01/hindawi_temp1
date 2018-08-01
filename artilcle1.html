@@ -50,6 +50,9 @@
 	.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
 	
 	.fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }
+		
+	.sticky-wrapper {transition: all 0.3s ease; height: 0px !important}
+		    
 	</style>
 	
 	<!-- style exceptions for IE 6 -->
@@ -270,21 +273,28 @@
 
             </div>
            
-          </div> </div></div></section>
-	
-<div id="trigger3" class="spacer s0" style="margin-top: 420px; float: right;"></div>		
-<section id="AniskinyTitle" class="skinnyTitle" style="z-index: 10">
+          </div> </div></div><section id="stick2" class="skinnyTitle" style="z-index: 10">
 	  <div class="container"><div class="row">  
-        
-		 
-             <a href="index_journal.html" style="text-decoration: none"> <h1>Advances in Hematology</h1></a> <img src="img/stats.png" alt="" width="614" height="51"  style="margin: 0 auto; display: block; float: right; margin-top: -70px"/>
-           
-  </div></div></section>   
+             <a href="index_journal.html" style="text-decoration: none"> <h1>Advances in Hematology</h1></a> <img src="img/stats.png" alt="" width="614" height="51"  style="margin: 0 auto; display: block; float: right; margin-top: -70px; transition: all 0.3s;"/>
+  </div></div></section>   </section>
+	
 
-	<div id="trigger2" class="spacer" style="margin-top: 420px; float: right;"></div>	
+			 <script>
+$(document).ready(function(){
+    $("#stick2").sticky({topSpacing:60});
+  });		
+</script>
+	
+  
 
 	
- <section id="pin1" style="background: #d8d8d8; float: right; z-index: 11; width: 100% !imortant">
+		 <script>
+$(document).ready(function(){
+    $("#stick").sticky({topSpacing:130});
+  });		
+</script>
+	
+ <section id="stick" style="background: #d8d8d8;  z-index: 11; width: 100% !important">
 	  <div class="container"><div class="row">  
         
         		<div class="jNavbar">
@@ -311,45 +321,28 @@
 	</section> 	
 	
 
-<!--ScrollMagic 1-->
+
 	
-<script>
-						$(function () { // wait for document ready
-							// build scene
-							var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", duration: 0})
-											.setPin("#pin1")
-											//.addIndicators({name: "3 (duration: 300)"}) // add indicators (requires plugin)
-											.addTo(controller);
-						});
-</script>		
+	
 	
 	
 <!--map--><!--main content-->
-  <section id="animate1" class="section-padding" style="background: url(img/bg2xx.png); background-position: 0px 270px; background-repeat: no-repeat">
-	  <div class="container" style="margin-top: 0px; margin-bottom: 0px;"><div class="row"> <div id="getother" style="background: #fff; width: 300px; height: 61px; display: block; clear: both; position: absolute; z-index: 9; margin-left: -10px;
+  <section id="animate1" class="section-padding" style="background: url(img/bg2xx.png); background-position: 0px 270px; background-repeat: no-repeat; margin-top: 40px;">
+	  <div class="container" style="margin-top: 0px; margin-bottom: 0px;"><div class="row"> <div id="getother" style="background: #fff; width: 300px; height: 61px; display: block; clear: both; position: absolute; z-index: 9; margin-left: 265px;
+px;
     margin-top: -10px;"></div>
 		  
 		  
-			  <div class="dropdown">
+			  <div class="dropdown" style="z-index: 0">
     <div id="getpdf" style=" width: 40px; height: 40px; display: block; clear: both; position: absolute; margin-top: 41px; margin-left: 1131px; z-index: 88;"></div>
     
-    <div class="dropdown-content">
-      <a href="#"><div id="getother" style=" width: 300px; height: 200px; display: block; clear: both; position: absolute; margin-top: 26px; margin-left: 859px;"><img src="img/getpdf.png" width="303" height="146" alt=""/></div></a>
+    <div class="dropdown-content" style="margin-left: 300px;">
+      <a href="#"><div id="getother" style=" width: 300px; height: 200px; display: block; clear: both; position: absolute; margin-top: 26px; margin-left: 559px;"><img src="img/getpdf.png" width="303" height="146" alt=""/></div></a>
       
     </div>
   </div> <img src="img/acontent1.png" width="1174" height="1972" style="margin: 0 auto; display: block" alt=""/></div></div></section>
 	
 	
-	
-	
-	<script>
-						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger2"})
-										// trigger animation by adding a css class
-										.setClassToggle("#AniskinyTitle", "zapSkinny")
-										//.addIndicators({name: "2 - add a class"}) // add indicators (requires plugin)
-										.addTo(controller);
-					</script>
 		
  <!--special issues-->
   
@@ -440,6 +433,7 @@
 
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
   <script src="js/custom.js"></script>
  
 	
