@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medilab Free Bootstrap HTML5 Template</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway|Candal|PT+Sans:400,700">
+
+
+	
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>	
+	
+    <script type="text/javascript" src="js/fg.menu.js"></script>
+    
+    <link type="text/css" href="css/fg.menu.css" media="screen" rel="stylesheet" />
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>	
+	
+	
+	
+	
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+	
+	
+	
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.cssxxx">
+    
+    <!-- styles for this example page only -->
+	<style type="text/css">
+	
+	#menuLog { font-size:1.4em; margin:20px; }
+	.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
+	
+	.fg-button { clear:left; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+	.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+	a.fg-button { float:left;  }
+	button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */
+	
+	.fg-button-icon-left { padding-left: 2.1em; }
+	.fg-button-icon-right { padding-right: 2.1em; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+	.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+	.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
+	
+	.fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }
+		
+	.sticky-wrapper {transition: all 0.3s ease; height: 0px !important}
+		
+		
+		
+	.nav {
+    padding-left: 4px;
+    margin-bottom: 0;
+		list-style: none;}
+		
+	.nav-tabs>li>a {
+    margin-right: 0px;
+    line-height: 1.2;
+    border: 1px solid transparent;
+    border-radius: 2px 2px 0 0;
+		border-bottom: none;
+		
+		
+		}
+		
+	.nav-tabs>li>a:hover{
+		border-color:#eee #eee #ddd;
+		background-color: #fff}
+		
+
+	
+	.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{
+		color:#ccc;cursor:default;background-color:#fff;border-bottom-color:transparent; border-top: 2px solid #ff5547;}
+		
+		.nav-tabs.nav-justified{
+			width:100%;border-bottom:0}
+		
+		.nav-tabs.nav-justified>li{
+			float:none}
+		
+		.nav-tabs.nav-justified>li>a{
+			margin-bottom:15px;text-align:center}
+		
+		
+		
+		    
+	</style>
+	
+	<!-- style exceptions for IE 6 -->
+	<!--[if IE 6]>
+	<style type="text/css">
+		.fg-menu-ipod .fg-menu li { width: 95%; }
+		.fg-menu-ipod .ui-widget-content { border:0; }
+	</style>
+	<![endif]-->	
+    
+    <script type="text/javascript">    
+    $(function(){
+    	// BUTTONS
+    	$('.fg-button').hover(
+    		function(){ $(this).removeClass('ui-state-default').addClass('ui-state-focus'); },
+    		function(){ $(this).removeClass('ui-state-focus').addClass('ui-state-default'); }
+    	);
+    	
+    	// MENUS    	
+		$('#flat').menu({ 
+			content: $('#flat').next().html(), // grab content from this page
+			showSpeed: 400 
+		});
+		
+		$('#hierarchy').menu({
+			content: $('#hierarchy').next().html(),
+			crumbDefaultText: ' '
+		});
+		
+		$('#hierarchybreadcrumb').menu({
+			content: $('#hierarchybreadcrumb').next().html(),
+			backLink: false
+		});
+		
+		// or from an external source
+		$.get('menuContent.html', function(data){ // grab content from another page
+			$('#flyout').menu({ content: data, flyOut: false });
+		});
+    });
+    </script>
+   
+   
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner--><script>
+						// init controller
+						var controller = new ScrollMagic.Controller();
+					</script>
+
+
+
+
+	
+	
+	
+	
+<section id="bannerxxx" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="width: 1400px">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+			  
+            <div class="collapse navbar-collapse navbar-left" id="myNavbar">
+             
+					<div class="mNavbar">
+  
+						
+						 <a href="index.html">Home</a>
+						
+						
+						<div class="mdropdown">
+<a tabindex="0" href="#news-items-2" class="fg-buttonxx fg-button-icon-rightxx ui-widgetxx ui-state-defaultxx ui-corner-allxx" id="hierarchybreadcrumb">Journals <i class="fa fa-angle-down fa-lg"></i></a>
+	
+<div id="news-items-2" class="hidden">
+<ul>
+	<li><a href="#">Biology and Life Science</a>
+
+		<ul>
+			<li><a href="#">Abstract and Applied Analysis</a></li>
+			<li><a href="#">Active and Passive Electronic Components</a></li>
+			<li><a href="#">Advances in Acoustics and Vibration</a></li>
+			<li><a href="#">Advances in Agriculture</a></li>
+			<li><a href="#">Advances in Astronomy</a></li>
+			<li><a href="#">Advances in Bioinformatics</a></li>
+			<li><a href="#">Advances in Chemistry</a></li>
+			<li><a href="#">Behavioural Neurology</a></li>
+			<li><a href="#">Biochemistry Research International</a></li>
+			<li><a href="#">Bioinorganic Chemistry and Applications</a></li>
+			<li><a href="#">BioMed Research International</a></li>
+			<li><a href="#">Bone Marrow Research</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="#">Biomedical Science</a>
+	<ul>
+			<li><a href="#">Entertainment</a></li>
+			<li><a href="#">Politics</a></li>
+			<li><a href="#">A&amp;E</a></li>
+			<li><a href="#">Sports</a></li>
+			<li><a href="#">Local</a></li>
+			<li><a href="#">Health</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Case reports</a>
+	<ul>
+			<li><a href="#">Entertainment</a></li>
+			<li><a href="#">Politics</a></li>
+			<li><a href="#">A&amp;E</a></li>
+			<li><a href="#">Sports</a></li>
+			<li><a href="#">Local</a></li>
+			<li><a href="#">Health</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Chemistry</a>
+	<ul>
+		<li><a href="#">Breakfast</a></li>
+		<li><a href="#">Lunch</a></li>
+		<li><a href="#">Dinner</a></li>
+		<li><a href="#">Dessert</a>	
+	</ul>
+	</li>
+	
+	<li><a href="#">Computer Science</a></li>
+	<li><a href="#">Earth, Energy, and Environmental Science</a></li>
+	<li><a href="#">Medicine</a></li>
+	<li><a href="#">Materials Science</a>
+		<li><a href="#">Mathematics</a></li>
+	<li><a href="#">Physics</a>
+		
+	</li>
+  </ul>
+</div>
+	
+</div>
+						
+						
+						
+						  <div class="mdropdown">
+							<button class="mdropbtn">Rescources
+							  <i class="fa fa-angle-down fa-lg"></i>
+							</button>
+							<div class="mdropdown-content">
+							  <a href="#">Authors</a>
+							  <a href="#">Editors</a>
+								<a href="#">Institutions</a>
+							  <a href="#">Publishers</a>
+							</div>
+						  </div> 
+						
+						 <div class="mdropdown">
+							<button class="mdropbtn">News
+							  <i class="fa fa-angle-down fa-lg"></i>
+							</button>
+							<div class="mdropdown-content">
+							  <a href="#">In the Press</a>
+							  <a href="#">Blog News</a>
+							
+							</div>
+						  </div> 
+						
+						 <div class="mdropdown">
+							<button class="mdropbtn">About Us
+							  <i class="fa fa-angle-down fa-lg"></i>
+							</button>
+							<div class="mdropdown-content">
+							  <a href="#">About Hindawi</a>
+							  <a href="#">Meet the Team</a>
+								<a href="#">Contact Us</a>
+							</div>
+						  </div> 
+						
+						
+					
+
+						
+						
+						</div>
+            </div>
+			  
+			  
+			  
+		    <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search journals and articles by keywords">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+			  
+		    <div class="navbar-right" id="submitR"> 
+			  <a href="#contact" class="btn btn-appoint">Submit research</a>
+		    </div>
+          </div>
+        </div>
+      </nav>
+		
+	</div>
+  </section>	
+
+
+	
+<section id="" class="section-padding" style="background: url(img/bg-banner_journal2.png);  background-repeat: no-repeat; height: 340px; background-size: 110%;">
+	
+	<div class="container"><div class="row">   <div class="banner-info">
+       
+		  
+		  
+        <div class="Jbanner-text">
+				<h3>Journal of</h3>
+              <h1>Pathogens</h1>
+
+            </div>
+		  
+          </div> </div></div>  <section id="stick2" class="skinnyTitle" style="z-index: 10">
+	  <div class="container"><div class="row">  
+             <a href="index_journal.html" style="text-decoration: none"> <h1>Journal of Pathogens</h1></a> <img src="img/stats.png" alt="" width="614" height="51"  style="margin: 0 auto; display: block; float: right; margin-top: -70px; transition: all 0.3s;"/>
+  </div></div></section>   </section>
+	
+
+			 <script>
+$(document).ready(function(){
+    $("#stick2").sticky({topSpacing:60});
+  });		
+</script>
+	
+  
+
+	
+		 <script>
+$(document).ready(function(){
+    $("#stick").sticky({topSpacing:130});
+  });		
+</script>
+	
+ <section id="stick" style="background: #d8d8d8;  z-index: 11; width: 100% !important">
+	  <div class="container"><div class="row">  
+        
+        		<div class="jNavbar">
+  
+  <div class="dropdown">
+    <button class="dropbtn">About this Journal 
+      <i class="fa fa-angle-down fa-lg"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Abstracting and Indexing</a>
+      <a href="#">Aims and Scope</a>
+      <a href="#">Article Processing Charges</a>
+		<a href="#">Articles in Press</a>
+      <a href="#">Bibliographic Information</a>
+    </div>
+  </div> 
+<a href="#home">Editorial Board</a>
+  <a href="#news">Special Issues</a>
+<a href="#news">Journal Reports</a>
+</div>
+		  
+           
+           </div></div>
+	</section> 	
+	
+
+
+	
+	
+	
+	
+<!--map--><!--main content-->
+  <section id="" class="section-padding" style=" margin-top: 40px;">
+	  <div class="container" style="margin-top: 0px; margin-bottom: 0px;"><div class="row"> <div id="getother" style="background: #fff; width: 300px; height: 61px; display: block; clear: both; position: absolute; z-index: 9; margin-left: 265px;
+px;
+    margin-top: -10px;"></div>
+		  
+		  
+			  <div class="dropdown" style="z-index: 0">
+    <div id="getpdf" style=" width: 40px; height: 40px; display: block; clear: both; position: absolute; margin-top: 84px; margin-left: 1127px; z-index: 88;"></div>
+    
+    <div class="dropdown-content" style="margin-left: 300px;">
+      <a href="#"><div id="getother" style=" width: 300px; height: 200px; display: block; clear: both; position: absolute; margin-top: 74.5px; margin-left: 550px;"><img src="img/getpdf.png" width="303" height="146" alt=""/></div></a>
+      
+    </div>
+  </div> <img src="img/acontent2.png" width="830" height="1992" style="margin: 0 auto; display: block; float: left" alt=""/>  <div style="width: 310px; float: right; display: block">
+		  
+		  
+		 
+  
+ <section id="stickx" style="margin-left: -5px;"> 		  
+		  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><img src="img/info_icon.png" width="23" height="23" alt=""/></a></li>
+    <li><a data-toggle="tab" href="#menu1"><img src="img/img_icon.png" width="23" height="23" alt=""/></a></li>
+    <li><a data-toggle="tab" href="#menu2"><img src="img/data_icon.png" width="23" height="23" alt=""/></a></li>
+    
+  </ul>
+
+  <div class="tab-content" style="width: 310px;">
+    <div id="home" class="tab-pane fade in active">
+   <img src="img/acontent_tab1.png" width="304" height="960" alt="" style="margin-top: 40px; float: right; margin-left: -5px"/>  </div>
+    <div id="menu1" class="tab-pane fade">
+    <section id="stick3" style="overflow: scroll; height: 800px; width: 310px; border-bottom: 1px solid #eee">  <a data-toggle="modal" href="#myModal" class="button"> <img src="img/acontent_tab2.png" width="304" height="868" style="margin-top: 40px; float: right  margin-left: -5px; top: 0" alt=""/> <img src="img/acontent_tab2.png" width="304" height="868" style="margin-top: 40px; float: right  margin-left: -5px; top: 0" alt=""/> </a> </section> </div>
+    <div id="menu2" class="tab-pane fade">
+      <p style="text-align: center;"><br>
+<br>
+
+No data present</p>
+      
+    </div>
+
+  </div>
+		  
+				  
+</section>		 			
+		 <script>
+$(document).ready(function(){
+    $("#stick3").sticky({topSpacing:0});
+  });		
+</script>	  
+
+		  
+		  </div>  </div></div></section>
+	
+	
+	
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h5 class="modal-title">Fig 1. Hereditary Hemorrhagic Telangiectasia</h5>
+        </div>
+        <div class="modal-body">
+	    <img src="img/pop_image.jpg" width="600" height="457" style="margin-left: 14%; margin-bottom: 30px;" alt=""/> <br>
+Hereditary Hemorrhagic Telangiectasia (HHT) is a rare autosomal dominant vascular disorder characterized by the presence of large and small arteriovenous malformations in a number of vascular beds. </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>	
+	
+	
+	
+		
+ <!--special issues-->
+  
+  <section style="background: url(img/bg2.png);  background-repeat: no-repeat; height: 10px">
+    
+  </section>	
+	
+
+	
+<!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+			 <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Publish with Us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info"><li>Submit Research<br>
+                Browse Journals<br>
+                Authors</li>
+              </ul>
+            </div>
+          </div>
+			 <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Work with Us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info"><li>Institutions<br>
+                Publishers<br>
+                Editors</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About Us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info"><li>About Hindawi<br>
+                Meet the Team<br>
+                Contact Us</li>
+              </ul>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+         
+          <div class="col-md-3 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Connect with us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         © 2018 Hindawi Limited unless otherwise stated.
+<div class="credits">
+            <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Medilab
+              --></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->	
+	
+
+	
+		
+
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+  <script src="js/custom.js"></script>
+ 
+	
+	
+</body>
+</html>
